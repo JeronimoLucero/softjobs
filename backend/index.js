@@ -9,6 +9,8 @@ const morgan = require('morgan');
 const { dbConfig, jwtSecret } = require('./config');  
 const port = 3000;
 
+const app = express();
+
 app.use(morgan('dev')); 
 app.use(bodyParser.json());
 app.use(cors());
